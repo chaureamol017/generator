@@ -68,7 +68,6 @@ public class ExcelWriter {
 		SheetStyleDetails sheetStyle = excelDetails.getSheetStyleDetails(sheetName);
 		boolean isDefaultStyle = sheetStyle.isapplySameStyleForAllHeaderColumns();
 		List<CellStyle> cellStyles = ExcelStyleAdapter.adapt(workbook, createHelper, sheetStyle.getHeaderCellStyle());
-//		List<CellStyle> cellStyles = new ArrayList<CellStyle>();
 
 		// Create a Row
 		Row headerRow = sheet.createRow(0);

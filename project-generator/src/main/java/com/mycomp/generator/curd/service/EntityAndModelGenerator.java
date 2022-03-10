@@ -1,21 +1,21 @@
 package com.mycomp.generator.curd.service;
 
+import static com.mycomp.generator.common.ClassTemplates.CLASS_ENTITY_ANNOTATION_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.CLASS_START_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.COLUMN_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.FIELD_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.GETTER_FUNCTIONS_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.SETTER_FUNCTIONS_TEMPLATE;
+import static com.mycomp.generator.common.CommonTemplates.NEW_LINE;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import com.mycomp.generator.common.StringReplacer;
 import com.mycomp.generator.curd.model.ClassField;
 import com.mycomp.generator.curd.model.EntityModel;
 import com.mycomp.generator.curd.model.ProjectDetails;
 import com.mycomp.generator.curd.model.type.ClassType;
-
-import static com.mycomp.generator.curd.template.CommonTemplates.NEW_LINE;
-
-import static com.mycomp.generator.curd.template.ClassTemplates.CLASS_ENTITY_ANNOTATION_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.CLASS_START_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.COLUMN_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.FIELD_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.GETTER_FUNCTIONS_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.SETTER_FUNCTIONS_TEMPLATE;
 
 public class EntityAndModelGenerator extends AbstractGenerator {
 

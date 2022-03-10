@@ -1,4 +1,4 @@
-package com.mycomp.generator.curd.service;
+package com.mycomp.generator.common;
 
 import java.util.Map;
 

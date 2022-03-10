@@ -1,17 +1,17 @@
-package com.mycomp.generator.curd.template;
+package com.mycomp.generator.common;
 
-import static com.mycomp.generator.curd.template.CommonTemplates.CLASS_NAME;
-import static com.mycomp.generator.curd.template.CommonTemplates.CLASS_PACKAGE;
-import static com.mycomp.generator.curd.template.CommonTemplates.CLASS_POST_FIX;
-import static com.mycomp.generator.curd.template.CommonTemplates.CLASS_TYPE;
-import static com.mycomp.generator.curd.template.CommonTemplates.COLUMN_NAME;
-import static com.mycomp.generator.curd.template.CommonTemplates.EXTENTIONS;
-import static com.mycomp.generator.curd.template.CommonTemplates.FIELD_NAME;
-import static com.mycomp.generator.curd.template.CommonTemplates.FIELD_TYPE;
-import static com.mycomp.generator.curd.template.CommonTemplates.IMPLEMENTATIONS;
-import static com.mycomp.generator.curd.template.CommonTemplates.METHOD_FIELD;
-import static com.mycomp.generator.curd.template.CommonTemplates.SERVICE_MODEL;
-import static com.mycomp.generator.curd.template.CommonTemplates.TABLE_NAME;
+import static com.mycomp.generator.common.CommonTemplates.CLASS_NAME;
+import static com.mycomp.generator.common.CommonTemplates.CLASS_PACKAGE;
+import static com.mycomp.generator.common.CommonTemplates.CLASS_POST_FIX;
+import static com.mycomp.generator.common.CommonTemplates.CLASS_TYPE;
+import static com.mycomp.generator.common.CommonTemplates.COLUMN_NAME;
+import static com.mycomp.generator.common.CommonTemplates.EXTENTIONS;
+import static com.mycomp.generator.common.CommonTemplates.FIELD_NAME;
+import static com.mycomp.generator.common.CommonTemplates.FIELD_TYPE;
+import static com.mycomp.generator.common.CommonTemplates.IMPLEMENTATIONS;
+import static com.mycomp.generator.common.CommonTemplates.METHOD_FIELD;
+import static com.mycomp.generator.common.CommonTemplates.SERVICE_MODEL;
+import static com.mycomp.generator.common.CommonTemplates.TABLE_NAME;
 
 public class ClassTemplates {
 

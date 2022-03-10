@@ -1,10 +1,11 @@
 package com.mycomp.generator.curd.service;
 
-import static com.mycomp.generator.curd.template.ClassTemplates.PACKAGE_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.PACKAGE_TEMPLATE;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import com.mycomp.generator.common.StringReplacer;
 import com.mycomp.generator.curd.model.ClassDetails;
 import com.mycomp.generator.curd.model.EntityModel;
 import com.mycomp.generator.curd.model.ProjectDetails;

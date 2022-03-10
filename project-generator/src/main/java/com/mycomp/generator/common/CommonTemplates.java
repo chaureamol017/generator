@@ -1,4 +1,4 @@
-package com.mycomp.generator.curd.template;
+package com.mycomp.generator.common;
 
 public class CommonTemplates {
 

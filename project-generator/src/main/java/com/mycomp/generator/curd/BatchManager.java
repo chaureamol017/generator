@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+import com.mycomp.generator.common.Counter;
+
 public class BatchManager<T> {
     interface Adaptor<T> extends Function<Object[], T> { }
-    interface BatchHandler<T> extends Consumer<List<T>> {
-
-    }
+    interface BatchHandler<T> extends Consumer<List<T>> {}
 
     private final int batchSize;
     private final Adaptor<T> adaptor;
@@ -23,13 +23,13 @@ public class BatchManager<T> {
 
     public int process(final Object[][] data) {
         final List<T> rows = new ArrayList<>(batchSize);
-        int count = 0;
+        final Counter counter = new Counter();
 
         for (int i = 1; i < data.length; i++) {
             final Object[] row = data[i];
             if (row.length > 0) {
                 rows.add(adaptor.apply(row));
-                count++;
+                counter.increment();
             }
 
             if (rows.size() == batchSize) {
@@ -40,21 +40,7 @@ public class BatchManager<T> {
         if (!rows.isEmpty()) {
             batchHandler.accept(rows);
         }
-        return count;
+        return counter.getCount();
     }
 
-
-    static Builder of(final int batchSize) {
-        return new Builder(batchSize);
-    }
-
-    static class Builder {
-        private final int batchSize;
-        private Builder(int batchSize) {
-            this.batchSize = batchSize;
-        }
-        <T> Function<BatchHandler<T>, BatchManager<T>> adapt(final Adaptor<T> adaptor) {
-            return batchHandler -> new BatchManager<>(batchSize, adaptor, batchHandler);
-        }
-    }
 }

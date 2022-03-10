@@ -1,12 +1,12 @@
 package com.mycomp.generator.curd.service;
 
+import static com.mycomp.generator.common.ClassTemplates.CLASS_START_TEMPLATE;
+import static com.mycomp.generator.common.CommonTemplates.NEW_LINE;
+
+import com.mycomp.generator.common.StringReplacer;
 import com.mycomp.generator.curd.model.EntityModel;
 import com.mycomp.generator.curd.model.ProjectDetails;
 import com.mycomp.generator.curd.model.type.ClassType;
-
-import static com.mycomp.generator.curd.template.CommonTemplates.NEW_LINE;
-
-import static com.mycomp.generator.curd.template.ClassTemplates.CLASS_START_TEMPLATE;
 
 public class DaoGenerator extends AbstractGenerator {
 	

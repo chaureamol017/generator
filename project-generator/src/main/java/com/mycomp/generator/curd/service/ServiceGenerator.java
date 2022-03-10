@@ -1,17 +1,17 @@
 package com.mycomp.generator.curd.service;
 
+import static com.mycomp.generator.common.ClassTemplates.CLASS_START_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.DELETE_FUNCTION_SERVICE_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.GET_ALL_FUNCTION_SERVICE_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.GET_FUNCTION_SERVICE_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.SAVE_FUNCTION_SERVICE_TEMPLATE;
+import static com.mycomp.generator.common.ClassTemplates.UPDATE_FUNCTION_SERVICE_TEMPLATE;
+import static com.mycomp.generator.common.CommonTemplates.NEW_LINE;
+
+import com.mycomp.generator.common.StringReplacer;
 import com.mycomp.generator.curd.model.EntityModel;
 import com.mycomp.generator.curd.model.ProjectDetails;
 import com.mycomp.generator.curd.model.type.ClassType;
-
-import static com.mycomp.generator.curd.template.CommonTemplates.NEW_LINE;
-
-import static com.mycomp.generator.curd.template.ClassTemplates.CLASS_START_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.SAVE_FUNCTION_SERVICE_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.UPDATE_FUNCTION_SERVICE_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.GET_ALL_FUNCTION_SERVICE_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.GET_FUNCTION_SERVICE_TEMPLATE;
-import static com.mycomp.generator.curd.template.ClassTemplates.DELETE_FUNCTION_SERVICE_TEMPLATE;
 
 public class ServiceGenerator extends AbstractGenerator {
 
